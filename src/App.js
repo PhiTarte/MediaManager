@@ -8,7 +8,11 @@ const App = () => {
   }
   fetch("/localhost:8000/realisateur/hitchcock",opt)
   .then(res=>{
+<<<<<<< HEAD
     console.log(res)
+=======
+    return res
+>>>>>>> develop
   })
   return (
     <div className="App">
