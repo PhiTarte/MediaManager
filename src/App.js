@@ -4,9 +4,10 @@ import './App.css';
 
 const App = () => {
   const opt={
-    method:'GET'
+    method:'GET',
+    mode: 'no-cors'
   }
-  fetch("/localhost:8000/realisateur/hitchcock",opt)
+  fetch("//localhost:8000/realisateur/hitchcock",opt)
   .then(res=>{
      console.log(res)
     return res
