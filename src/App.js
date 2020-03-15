@@ -2,7 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  const opt={
+    method:'GET',
+    mode: 'no-cors'
+  }
+  fetch("//localhost:8000/realisateur/hitchcock",opt)
+  .then(res=>{
+     console.log(res)
+    return res
+  })
   return (
     <div className="App">
       <header className="App-header">
@@ -20,7 +29,8 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
+  
 }
 
 export default App;
